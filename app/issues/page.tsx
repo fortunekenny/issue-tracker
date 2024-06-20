@@ -44,6 +44,9 @@ const issues = await prisma.issue.findMany()
     </div>
   )
 }
+
+
+
 export default IssuesPage
 
 
