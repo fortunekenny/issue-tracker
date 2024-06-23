@@ -11,10 +11,7 @@ interface Props {
 }
 
 
-
 const IssueDetailPage = async ({params}: Props) => {
-
-
 
     const issue = await prisma.issue.findUnique({
         where: {id: parseInt(params.id)}
@@ -22,8 +19,6 @@ const IssueDetailPage = async ({params}: Props) => {
 
     if (!issue)
         notFound();
-
-   
 
   return (
     <Grid columns={{initial:'1', sm:'5'}} gap='5'>
