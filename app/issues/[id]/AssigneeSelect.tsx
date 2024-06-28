@@ -7,7 +7,8 @@ import { Select } from "@radix-ui/themes"
 const AssigneeSelect = () => {
   return (
     <Select.Root>
-        <Select.Trigger placeholder='Assign...'/>
+        {/* <Select.Trigger placeholder={"Pick a fruit"} /> */}
+        <Select.Trigger />
         <Select.Content>
             <Select.Group>
                 <Select.Label>Suggestion</Select.Label>
