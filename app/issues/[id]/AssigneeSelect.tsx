@@ -33,7 +33,7 @@ if (isLoading) return <Skeleton/>
 if (error) return null;
 
   return (
-    <Select.Root onValueChange={(userId) => {
+    <Select.Root defaultValue={issue.assignedToUserId || ''} onValueChange={(userId) => {
       axios.patch(`/api/issues/${issue.id}`, {assignedToUserId: userId || null})
     }}>
         {/* <Select.Trigger placeholder={"Pick a fruit"} /> */}
