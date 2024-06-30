@@ -37,8 +37,8 @@ const assignIssue = (userId: string) => {
   return (
     <>
       <Select.Root defaultValue={issue.assignedToUserId || ''} onValueChange={assignIssue}>
-          {/* <Select.Trigger placeholder={"Pick a fruit"} /> */}
-          <Select.Trigger />
+          {/*@ts-ignore*/}
+          <Select.Trigger placeholder={"assign..."} />
           <Select.Content>
               <Select.Group>
                 <Select.Label>Suggestion</Select.Label>
