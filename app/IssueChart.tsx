@@ -3,7 +3,7 @@
 
 
 import { Card } from "@radix-ui/themes";
-import {ResponsiveContainer, BarChart, Bar, XAxis, YAxis} from 'recharts'
+import {ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip} from 'recharts'
 
 
 
@@ -28,6 +28,7 @@ const IssueChart = ({open, inProgress, closed}: Props) => {
             <BarChart data={data}>
                 <XAxis dataKey="label"/>
                 <YAxis/>
+                {/* <Tooltip /> */}
                 <Bar dataKey='value' barSize={60} style={{fill:'var(--accent-9)'}}/>
             </BarChart>
         </ResponsiveContainer>
